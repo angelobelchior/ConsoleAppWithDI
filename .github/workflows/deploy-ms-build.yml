@@ -12,7 +12,7 @@ jobs:
     - name: Setup Nuget.exe
       uses: warrenbluckey/Setup-Nuget@v1
     - name: Restore packages
-      uses: nuget restore ConsoleAppWithDI.sln
+      run: nuget restore ConsoleAppWithDI.sln
     - name: Setup MSBuild.exe
       uses: warrenbluckey/Setup-MSBuild@v1 
     - name: Build 
