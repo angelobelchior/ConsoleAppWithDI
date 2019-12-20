@@ -5,3 +5,7 @@
 A Console Application Project Extention prepared to use Dependency Injection
 
 [Download](https://marketplace.visualstudio.com/items?itemName=AngeloBelchior.ConsoleAppWithDI)
+
+# Licença
+
+O código-fonte e a documentação neste projeto são distribuidos sob a licença [MIT](LICENSE)
