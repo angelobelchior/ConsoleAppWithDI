@@ -1,0 +1,19 @@
+name: ConsoleAppWithDI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup Nuget.exe
+      uses: warrenbluckey/Setup-Nuget@v1
+    - name: Restore packages
+      uses: nuget restore ConsoleAppWithDI.sln
+    - name: Setup MSBuild.exe
+      uses: warrenbluckey/Setup-MSBuild@v1 
+    - name: Build 
+      run: msbuild ConsoleAppWithDI.sln -p:Configuration=release
